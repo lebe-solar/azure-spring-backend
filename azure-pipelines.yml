@@ -15,10 +15,11 @@ steps:
     mavenPomFile: 'complete/pom.xml'
 - task: AzureSpringCloud@0
   inputs:
-    azureSubscription: ce7ccbe4-6bb1-42bd-8fcd-1dd7a85670db
+    azureSubscription: 'Azure subscription LeBe(ce7ccbe4-6bb1-42bd-8fcd-1dd7a85670db)'
     Action: 'Deploy'
-    AzureSpringCloud: app-lebe-backend-api 
-    AppName: lebe-backend
+    AzureSpringCloud: 'app-lebe-backend-api'
+    AppName: 'lebe-backend'
+    RuntimeVersion: 'Java_17'
     DeploymentType: 'Artifacts'
     UseStagingDeployment: false
     DeploymentName: 'default'
